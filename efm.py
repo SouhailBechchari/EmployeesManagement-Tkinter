@@ -102,20 +102,17 @@ class SalaryCalculatorApp:
         self.create_widgets()
 
     def create_widgets(self):
-        # Formateur Frame
+
         formateur_frame = ttk.LabelFrame(self.root, text="Formateur")
         formateur_frame.grid(row=0, column=0, padx=10, pady=10)
 
-        # ... (Formateur entry widgets)
+
 
         ttk.Button(formateur_frame, text="Ajouter Formateur", command=self.add_formateur).grid(row=6, column=0, columnspan=2, pady=10)
         ttk.Button(formateur_frame, text="Calculer Salaire", command=self.calculate_formateur_salary).grid(row=7, column=0, columnspan=2, pady=10)
 
-        # Agent Frame
         agent_frame = ttk.LabelFrame(self.root, text="Agent")
         agent_frame.grid(row=0, column=1, padx=10, pady=10)
-
-        # ... (Agent entry widgets)
 
         ttk.Button(agent_frame, text="Ajouter Agent", command=self.add_agent).grid(row=5, column=0, columnspan=2, pady=10)
         ttk.Button(agent_frame, text="Calculer Salaire", command=self.calculate_agent_salary).grid(row=6, column=0, columnspan=2, pady=10)
@@ -133,7 +130,7 @@ class SalaryCalculatorApp:
         messagebox.showinfo("Résultat", result_text)
 
     def calculate_formateur_salary(self):
-        # ... (rest of the code)
+
 
     def add_agent(self):
         nom = self.agent_nom_entry.get()
@@ -147,7 +144,7 @@ class SalaryCalculatorApp:
         messagebox.showinfo("Résultat", result_text)
 
     def calculate_agent_salary(self):
-        # ... (rest of the code)
+  
 
 if __name__ == "__main__":
     root = tk.Tk()
